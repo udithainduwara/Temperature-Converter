@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFCONVERTOR</title>
+    <script src="Script.js"></script>
+    <style>
+        button {
+            cursor: pointer;
+            background-color: yellow;
+            border-color: black;
+
+        }
+        button:hover{
+            background-color: brown;
+            transform: scale(0.95);
+        }
+        h2{
+            color: brown;
+        }
+        fieldset{
+            background-color: antiquewhite;
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+        <fieldset>
+            <legend><h2>Temp Convertor</h2></legend>
+            <label for="tempinput">Enter Temprature</label>
+            <input id="tempNumber"  type="number" name="Temprature" placeholder="Temprature">
+            
+            <br><br>
+
+            <label for="scale">Select Conversion</label>
+            <select id="dropDown">
+                <option value="Celsius">Celsious to Ferenheit</option>
+                <option value="Fahrenheit">Ferenheit to Celsious</option>
+            </select>
+
+            <button id="Convert" onclick="getDetails()" type="button">Convert</button>
+            <p id="convertText" ></p>
+        </fieldset>
+        </div>
+    </form>
+</body>
+</html>
